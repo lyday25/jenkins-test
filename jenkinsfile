@@ -3,3 +3,14 @@ pipeline {
 
        git 'https://github.com/clement2019/jekins_server_pipeline_test.git'
     }
+    stage('building image'){
+
+        steps {
+                script {
+                  sh 'printenv'
+                  sh 'git version'
+                  sh 'docker build -t goodlord777/centos-app:1.0 .'
+                }
+            }
+        }
+    }
