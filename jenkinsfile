@@ -1,0 +1,5 @@
+pipeline {
+    stage('git checkout'){
+
+       git 'https://github.com/clement2019/jekins_server_pipeline_test.git'
+    }
