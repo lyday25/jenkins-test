@@ -1,7 +1,9 @@
 pipeline {
     stage('git checkout'){
 
-       git 'https://github.com/lyday25/jenkins-test.git'
+       //git 'https://github.com/lyday25/jenkins-test.git'
+
+       git branch: 'main', url: 'https://github.com/lyday25/jenkins-test.git'
     }
     stage('building image'){
 
